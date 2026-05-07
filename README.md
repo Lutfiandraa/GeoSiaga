@@ -1,4 +1,18 @@
+Siap—aku sudah sesuaikan README kamu dengan **penambahan gambar dari folder `assets/GeoSiagaMap.PNG`** dan ditaruh di bagian yang paling impactful (hero preview + section map). Tinggal copy-paste 👇
+
+---
+
 # 🌊 GeoSpatial Predictive Flood Jakarta (2016–2020)
+
+<p align="center">
+  <img src="assets/GeoSiagaMap.PNG" width="900"/>
+</p>
+
+<p align="center">
+  <i>Interactive GIS-based flood prediction map for Jakarta (2016–2020)</i>
+</p>
+
+---
 
 Sistem prediksi banjir berbasis **Geospatial AI** yang menganalisis pola historis banjir di Jakarta menggunakan kombinasi **Machine Learning** dan **GIS (Geographic Information System)**.
 
@@ -10,7 +24,7 @@ Proyek ini mengintegrasikan data spasial, kondisi cuaca, serta analisis model un
 
 Jakarta merupakan salah satu kota dengan risiko banjir tinggi akibat kombinasi faktor:
 
-* Curah hujan ekstrem 🌧️
+* Curah hujan tidak menentu 🌧️
 * Kedekatan dengan sungai & DAS 🏞️
 * Urbanisasi & perubahan tata ruang 🏙️
 
@@ -26,9 +40,15 @@ Melalui pendekatan **GeoSpatial + Machine Learning**, proyek ini bertujuan untuk
 
 ### 🗺️ Interactive Risk Map
 
+<p align="center">
+  <img src="assets/GeoSiagaMap.PNG" width="850"/>
+</p>
+
 * Visualisasi GIS berbasis peta interaktif
 * Layer sungai, buffer zone, dan prediksi model
 * Integrasi Leaflet untuk eksplorasi real-time
+
+---
 
 ### 📊 Advanced Analytics
 
@@ -36,10 +56,14 @@ Melalui pendekatan **GeoSpatial + Machine Learning**, proyek ini bertujuan untuk
 * Feature importance (faktor paling berpengaruh)
 * Timeline historis kejadian banjir
 
+---
+
 ### ⚡ Dynamic Prediction API
 
 * Prediksi probabilitas banjir berbasis input cuaca
 * Endpoint API menggunakan FastAPI
+
+---
 
 ### 🔄 Automated Data Pipeline
 
@@ -165,11 +189,13 @@ http://127.0.0.1:8000
 
 ## 👨‍💻 Author
 
-Developed by **Lutfi Andra**
-GeoSpatial AI Enthusiast 🌍
+Developed by **Lutfiandra**
+Fullstack Developer | Data & AI Engineer
 
 ---
 
 ## ⭐ Closing
 
 > “Turning spatial data into actionable flood intelligence.”
+
+---
