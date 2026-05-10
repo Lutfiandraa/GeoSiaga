@@ -1,7 +1,3 @@
-Siap—aku sudah sesuaikan README kamu dengan **penambahan gambar dari folder `assets/GeoSiagaMap.PNG`** dan ditaruh di bagian yang paling impactful (hero preview + section map). Tinggal copy-paste 👇
-
----
-
 # 🌊 GeoSpatial Predictive Flood Jakarta (2016–2020)
 
 <p align="center">
