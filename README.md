@@ -38,12 +38,6 @@ Melalui pendekatan **GeoSpatial + Machine Learning**, proyek ini bertujuan untuk
 
 ## 🧠 Key Features
 
-### 🗺️ Interactive Risk Map
-
-<p align="center">
-  <img src="assets/GeoSiagaMap.PNG" width="850"/>
-</p>
-
 * Visualisasi GIS berbasis peta interaktif
 * Layer sungai, buffer zone, dan prediksi model
 * Integrasi Leaflet untuk eksplorasi real-time
