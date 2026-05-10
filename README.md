@@ -137,7 +137,7 @@ http://127.0.0.1:8000
 
 ---
 
-## 📡 API Endpoint (Example)
+## 📡 API Endpoint
 
 | Endpoint    | Method | Description                  |
 | ----------- | ------ | ---------------------------- |
