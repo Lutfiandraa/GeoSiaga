@@ -7,8 +7,11 @@ import Navbar from "@/components/layout/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jakarta Flood Risk Dashboard",
+  title: "GeoSiaga",
   description: "Advanced AI-powered flood risk analysis and mapping for Jakarta",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

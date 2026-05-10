@@ -16,4 +16,5 @@ export const endpoints = {
   upload: '/api/upload',
   rivers: '/api/geojson/rivers',
   buffer: '/api/geojson/buffer',
+  actualEvents: '/api/geojson/actual-events',
 };

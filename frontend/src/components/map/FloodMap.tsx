@@ -26,6 +26,8 @@ interface FloodMapProps {
 }
 
 const FloodMap = ({ regions, rivers, buffer, heatmap, actualEvents }: FloodMapProps) => {
+  if (typeof window === 'undefined') return null;
+
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

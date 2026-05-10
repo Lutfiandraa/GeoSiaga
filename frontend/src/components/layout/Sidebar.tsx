@@ -3,7 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Map as MapIcon, BarChart3, UploadCloud, Waves } from 'lucide-react';
+import Image from 'next/image';
+import { LayoutDashboard, Map as MapIcon, BarChart3, UploadCloud, Activity } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -16,6 +17,7 @@ const menuItems = [
   { name: 'Flood Map', icon: MapIcon, path: '/map' },
   { name: 'Analytics', icon: BarChart3, path: '/analytics' },
   { name: 'Data Upload', icon: UploadCloud, path: '/upload' },
+  { name: 'Prediction', icon: Activity, path: '/predict' },
 ];
 
 export default function Sidebar() {
@@ -43,10 +45,10 @@ export default function Sidebar() {
   }, [displayText, isDeleting]);
 
   return (
-    <aside className="relative flex-shrink-0 w-64 h-full bg-black text-white z-50">
-      <div className="p-8 flex items-center gap-3">
-        <div className="bg-blue-600 p-2 rounded-xl shadow-lg shadow-blue-500/20">
-          <Waves className="w-6 h-6 text-white" />
+    <aside className="relative flex-shrink-0 w-64 h-full bg-black text-white z-50 flex flex-col">
+      <div className="pt-5 pb-3 px-8 flex flex-col items-center gap-1.5">
+        <div className="rounded-2xl shadow-lg shadow-blue-500/20 overflow-hidden">
+          <Image src="/favicon.png" alt="GeoSiaga" width={96} height={96} className="w-24 h-24" />
         </div>
         <span className="font-black text-xl tracking-tight">
           {displayText}
@@ -55,7 +57,7 @@ export default function Sidebar() {
         </span>
       </div>
 
-      <nav className="mt-8 px-4 space-y-2">
+      <nav className="mt-4 px-4 space-y-1 flex-1">
         {menuItems.map((item) => {
           const isActive = pathname === item.path;
           return (
@@ -63,7 +65,7 @@ export default function Sidebar() {
               key={item.path}
               href={item.path}
               className={cn(
-                "flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all duration-300",
+                "flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold transition-all duration-300",
                 isActive 
                   ? "bg-blue-600 text-white shadow-lg shadow-blue-600/20 scale-105" 
                   : "text-slate-400 hover:text-white hover:bg-zinc-900"
@@ -76,7 +78,7 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="absolute bottom-8 left-0 w-full px-8">
+      <div className="px-6 pb-6">
         <div className="p-4 bg-zinc-900/50 rounded-2xl border border-slate-700/50">
           <p className="text-[10px] font-bold text-slate-500 uppercase mb-2">Current Region</p>
           <p className="text-sm font-bold text-white">DKI Jakarta, ID</p>

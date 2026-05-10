@@ -28,7 +28,8 @@ async def upload_and_process(file: UploadFile = File(...)):
         process = subprocess.run(
             ["python", str(mount_script)],
             capture_output=True,
-            text=True
+            text=True,
+            timeout=300
         )
         
         if process.returncode != 0:
@@ -51,4 +52,8 @@ async def upload_and_process(file: UploadFile = File(...)):
         }
         
     except Exception as e:
+        # Rollback: restore backup if it exists
+        backup_path = settings.DATA_DIR / "JakartaFlood.csv.bak"
+        if backup_path.exists() and not settings.CSV_PATH.exists():
+            shutil.move(str(backup_path), str(settings.CSV_PATH))
         raise HTTPException(status_code=500, detail=str(e))
